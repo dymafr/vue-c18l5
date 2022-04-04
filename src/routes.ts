@@ -17,6 +17,9 @@ export const routes: RouteRecordRaw[] = [
   {
     path: '/b',
     alias: ['/c', '/d'],
+    meta: {
+      title: 'Page de profil',
+    },
     component: PageB,
   },
 ];
