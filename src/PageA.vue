@@ -1,15 +1,14 @@
 <template>
-  <div class="card p-20 d-flex justify-content-center align-items-center">
+  <div class="card p-20 d-flex flex-column justify-content-center align-items-center">
     <h1>La page A</h1>
+    <p>
+      <pre>{{ props }}</pre>
+    </p>
   </div>
 </template>
 
 <script setup lang="ts">
-import { watch } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-
-const route = useRoute();
-const router = useRouter();
+const props = defineProps<{ userId: string }>();
 </script>
 
 <style scoped lang="scss">
