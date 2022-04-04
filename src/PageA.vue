@@ -8,7 +8,7 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{ userId: string }>();
+const props = defineProps<{ id: string }>();
 </script>
 
 <style scoped lang="scss">
