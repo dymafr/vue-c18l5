@@ -16,6 +16,7 @@ export const routes: RouteRecordRaw[] = [
   },
   {
     path: '/b',
+    alias: ['/c', '/d'],
     component: PageB,
   },
 ];
